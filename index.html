@@ -7,15 +7,15 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
     <title>Wikipedia Homepage</title>
   </head>
   <body>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-2 bg-light">
-          <!-- side navigation panel -->
-            <img class="img-fluid mb-4" src="images/wiki-logo.png" alt="Wikipedia logo">
+        <!-- left side panel -->
+        <div class="col-2 bg-light">
+          <img class="img-fluid mb-4" src="images/wiki-logo.png" alt="Wikipedia logo">
           <ul>
             <li>Main Page</li>
             <li>Contents</li>
@@ -24,13 +24,12 @@
           </ul>
           <h6>Interaction</h6>
           <ul>
-            <li>Hlep</li>
+            <li>Help</li>
             <li>About Wikipedia</li>
             <li>Community portlan</li>
             <li>Recent changes</li>
             <li>Contact page</li>
           </ul>
-          <br>
           <h6>Tools</h6>
           <ul>
             <li>What links here</li>
@@ -41,17 +40,99 @@
             <li>Page information</li>
             <li>Wikidata item</li>
           </ul>
-          <br>
           <h6>Print/export</h6>
           <ul>
             <li>Create a book</li>
             <li>Download as PDF</li>
             <li>Printable version</li>
           </ul>
-          <br>
         </div>
-        <div class="col-md-10">
-          <!-- whole page except left nav panel -->
+        <!-- right side, everything except the left side panel -->
+        <div class="col-10">
+          <!-- header with nav bars -->
+          <div class="row bg-light pt-5">
+            <!-- Main Page & Talk tabs -->
+            <div class="col-3">
+              <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Main Page</a>
+                </li>
+                <li class="nav-item" id="talk">
+                  <a class="nav-link" href="#">Talk</a>
+                </li>
+              </ul>
+            </div>
+            <!-- Read, View source, View history tabs -->
+            <div class="col-5">
+              <span class="float-right">
+                <ul class="nav nav-tabs">
+                  <li class="nav-items">
+                    <a class="nav-link active" href="#">Read</a>
+                  </li>
+                  <li class="nav-items">
+                    <a class="nav-link" href="#">View source</a>
+                  </li>
+                  <li class="nav-items">
+                    <a class="nav-link" href="#">View history</a>
+                  </li>
+                </ul>
+              </span>
+            </div>
+            <!-- Search Wikipedia -->
+            <div class="col-4">
+              <input type="text" class="form-control" placeholder="Search Wikipedia">
+            </div>
+          </div>
+          <!-- Welcome to Wikipedia section -->
+          <div class="row m-3 bg-light">
+            <div class="col-3 text-center">
+              <h5>Welcome to <a href="#" class="card-link">Wikipedia</a>.</h5>
+              <p style="font-size: 10px;">the free encyclopedia that anyone can edit.</p>
+              <p style="font-size: 10px;">5,791,337 articles in English</p>
+            </div>
+            <div class="col-3">
+            </div>
+            <div class="col-2">
+              <ul>
+                <li>
+                  <a href="#">Arts</a>
+                </li>
+                <li>
+                  <a href="#">Biography</a>
+                </li>
+                <li>
+                  <a href="#">Geography</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-2">
+              <ul>
+                <li>
+                  <a href="#">History</a>
+                </li>
+                <li>
+                  <a href="#">Mathematics</a>
+                </li>
+                <li>
+                  <a href="#">Science</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-2">
+              <ul>
+                <li>
+                  <a href="#">Society</a>
+                </li>
+                <li>
+                  <a href="#">Technolody</a>
+                </li>
+                <li>
+                  <a href="#" style="font-weight: bold;">All portals</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
